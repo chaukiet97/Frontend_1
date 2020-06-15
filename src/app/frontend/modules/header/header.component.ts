@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService, GlobalsService } from "../../../globals";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   public menu: any;
   public width: number = 0;
-  constructor() {
+  constructor(
+    public user: UsersService,
+    public ws: GlobalsService,
+    public router: Router,
+  ) {
     this.menu = [
       { id: 1, name: "HOME", link: "#banner", description: "", detail: "", },
       { id: 2, name: "ABOUT", link: "#about-us", description: "", detail: "", },
@@ -22,7 +28,7 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  ngOnInit() {    
+  ngOnInit() {
     if (window['fixmenu']) {
 
       window['fixmenu']();
@@ -31,6 +37,11 @@ export class HeaderComponent implements OnInit {
       window['activeMenu']();
     }
 
+  }
+  logout() {
+
+    this.ws.USERS.remove();
+    this.ws.USERS.navigate(); 
   }
 
 }

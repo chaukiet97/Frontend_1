@@ -1,0 +1,49 @@
+
+.app-login{
+    min-height: 100vh;
+    padding: 100px 0px;
+    background: url(../../assets/img/login.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.app-login::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(../../assets/img/pattarn.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.app-login::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.card-block{
+    width: 100%;
+    background: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+.card-block .icon{
+    width: 20%;
+    /* border-right: 1px solid #eeee; */
+}
+.card-block .title{
+    width: 80%;
+}

@@ -34,6 +34,15 @@
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>
+                                <div class="profile_icon">
+                                    <div class="d-flex pt-1 justify-content-center"
+                                        *ngIf="ws.USERS.check(true) == true">
+                                        <div (click)='logout()'>
+                                           <img [src]="ws.USERS.get(true).photoUrl" alt="" srcset="">
+                                            <span class="text-white">{{ ws.USERS.get(true).name }}</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -49,14 +58,15 @@
                         type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars" style="color: #36EA7F"></i>
-                        
+
                     </button>
                     <div class="logo">
                         <a class="navbar-brand" [routerLink]=" '/'"><span>H</span>hunter</a>
                     </div>
                     <div class="collapse navbar-collapse scroll-blog" id="navbarNavDropdown">
                         <ul class="justify-content-end navbar-nav w-100 text-center"
-                            [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0" id="scroll_spy_nav">
+                            [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0"
+                            id="scroll_spy_nav">
                             <ng-template #recursiveMenu let-menu>
                                 <li class="nav-item" *ngFor="let item of menu"
                                     [attr.data-toggle]="(width < 989) ? 'collapse' :''"

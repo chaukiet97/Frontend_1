@@ -376,6 +376,9 @@ owl-theme .owl-dots .owl-dot span {
     padding: 0!important;
     font: inherit;
 }
+.owl-carousel-brand .owl-dots{
+    display: none;
+}
 //end siles
 /* ========= small device ============*/
 @media (max-width:767px) {
