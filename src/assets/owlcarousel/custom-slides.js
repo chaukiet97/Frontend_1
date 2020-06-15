@@ -15,22 +15,20 @@ function slides() {
 }
 function slidesproducts() {
     $('.owl-carousel-products').owlCarousel({
-        loop: false,
-        margin: 10,
-        autoplay: true,
-        nav: false,
-        dots: true,
-        navigation: false,
-        autoplayTimeout: 5000,
-        responsive: {
-            0: {
-                items: 2
+        loop:true,
+        margin:20,
+        nav:false,
+        autoplay:false,
+        mouseDrag:false,
+        responsive:{
+            0:{
+                items:1
             },
-            600: {
-                items: 4
+            600:{
+                items:2
             },
-            1000: {
-                items:6
+            1000:{
+                items:2
             }
         }
     })

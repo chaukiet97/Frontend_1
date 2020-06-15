@@ -333,38 +333,20 @@ button.toast-close-button {
 }
 
 //slides
-.box-slide .owl-nav{
-    display: inherit !important;
-    margin-top: 0;
-    top: -20px;
-    right: 0;
-    
-  }
-  .box-slide .owl-prev,.box-slide .owl-next{
-    //background-color:  rgba(255, 255, 255, 0.637)!important;
-    border: 0;
-    height: 50px;
-    width: 30px;
+.owl-carousel-products .owl-dot.active {
+    background: #36EA7F;
+    border-color: #36EA7F;
 }
-.box-slide .owl-prev span, .box-slide .owl-next span{
-  font-size: 50px;
-  line-height: 30px;
-  //color: moccasin;
-  text-align: center
+.owl-carousel-products .owl-dot {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    margin: 0px 4px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
 }
-.box-slide .owl-prev{
-    position: absolute;
-    left:20px;
-    top:40%;
-    margin: 0!important
-}
-.box-slide .owl-next{
-    position: absolute;
-    right: 20px;
-    top:40%;
-    margin: 0!important
-}
-// .box-slide .owl-item {
+// .app-testmonial .owl-item {
 //     width: auto!important;
 // }
 //end siles
@@ -549,6 +531,9 @@ button:focus{
     height: 0;
     width: 0;
   }
-
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+}
 
 
