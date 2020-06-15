@@ -1,0 +1,53 @@
+.section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.portfolio-filter li.active {
+    background: #36EA7F;
+    color: #222;
+    border-color: #36EA7F;
+}
+.portfolio-filter li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: 1px solid #e5e5e5;
+    margin: 0px 7px;
+}
+.singal-galary {
+    position: relative;
+}
+
+.work_hover {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.work_hover a {
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #36EA7F;
+    transform: translate(-50%,-50%);
+}
+.singal-galary:hover .work_hover {
+    opacity: 1;
+}
+.nopading{
+    padding: 0px !important;
+}

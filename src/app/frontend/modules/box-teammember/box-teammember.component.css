@@ -1,0 +1,66 @@
+.section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.team_item {
+    border: 1px solid #e5e5e5;
+    padding: 20px 10px;
+}
+.team_img {
+    height: 150px;
+    width: 150px;
+    border: 4px solid #e5e5e5;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.team_info {
+    margin-top: 20px;
+}
+.team_info h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    padding-bottom: 3px;
+}
+.team_info p {
+    margin: 0px;
+    color: #555;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    border-top: 1px solid #e5e5e5;
+    letter-spacing: 1px;
+}
+.team-social {
+    margin-top: 10px;
+}
+.team-social ul li {
+    display: inline-block;
+}
+.team-social ul li .fab {
+    height: 34px;
+    width: 29px;
+    border: 1px solid #e5e5e5;
+    line-height: 34px;
+    margin: 0px 4px;
+    color: #e5e5e5;
+    transition: all 0.3s linear;
+}
+.team-social ul li .fab:hover {
+    border-color: #36EA7F;
+    background: #36EA7F;
+    color: #222;
+}

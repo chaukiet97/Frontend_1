@@ -1,0 +1,111 @@
+.footer {
+    padding: 10px 0px;
+    background: #212121;
+    position: relative;
+}
+.footer_logo h1 {
+    margin: 0px;
+    color: #e5e5e5;
+    font-size: 20px;
+}
+.footer_logo h1 span {
+    color: #36EA7F;
+    font-size: 36px;
+    font-weight: 900;
+    padding-right: 3px;
+}
+.footer_copy p {
+    color: #666;
+    margin: 0px;
+    position: relative;
+    top: 9px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.footer_copy p span {
+    color: #36EA7F;
+}
+
+
+.footer_social ul li .fab {
+    color: #666;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 30px;
+    margin: 0px 4px;
+    transition: all 0.3s linear;
+}
+.footer_social ul li .fab:hover {
+    color: #36EA7F;
+}
+.scroll_top {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #333;
+    bottom: -69px;
+    right: 11px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 29px;
+    transform: rotate(46deg);
+    box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 9;
+}
+.scroll_top a{
+    color: #36EA7F !important;
+}
+.scroll_top .fa {
+    transform: rotate(-45deg);
+}
+/* ========= small device ============*/
+@media (max-width:767px) {
+    .fllow_info h3 {
+	    padding-top: 10px;
+    }
+    .footer_social {
+        text-align: center;
+        margin-top: 19px;
+    }
+    .footer_logo {
+	    text-align: center;
+    }
+    .scroll_top {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: #333;
+        bottom: -25px;
+        right: 11px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 29px;
+        transform: rotate(46deg);
+        box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+        cursor: pointer;
+        z-index: 9;
+    }
+
+}
+/* ========= tablet device ============*/
+@media(min-width:768px) and (max-width:1279px) {
+    
+    .scroll_top {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: #333;
+        bottom: -69px;
+        right: 11px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 29px;
+        transform: rotate(46deg);
+        box-shadow: 0px 0px 14px rgba(0,0,0,0.3);
+        cursor: pointer;
+        z-index: 9;
+    }
+}

@@ -1,0 +1,44 @@
+.section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}.section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.service_item {
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s linear;
+    padding: 13px 25px;
+}
+.service_item:hover {
+    border-color: #36EA7F;
+    cursor: pointer;
+}
+.service_item:hover .fas,.service_item:hover .fab {
+    color: #36EA7F;
+    transform: rotate(360deg);
+}
+.service_item .fas,.service_item .fab {
+    font-size: 25px;
+    color: #666;
+    transition: all 0.3s linear;
+}
+.service_item h2 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 11px 0px;
+}
+.service_item p {
+    margin: 0px;
+    color: #444;
+    font-size: 15px;
+}

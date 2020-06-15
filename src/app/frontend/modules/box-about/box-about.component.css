@@ -1,0 +1,68 @@
+.about_info button {
+    border: 2px solid #333;
+    padding: 10px 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: #333;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.about_info button:hover {
+    background: #36EA7F;
+    color: #222;
+    border-color: #36EA7F;
+}
+.about_info {
+    padding: 0px 19px 0px 0px;
+}
+.about_info h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding-bottom: 13px;
+}
+.about_info p {
+    margin: 0px;
+    color: #444;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+.about_video {
+    position: relative;
+    z-index: 1;
+}
+.about_video:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(../../../../assets/img/pattarn.png);
+    background-repeat: repeat;
+}
+.about_video:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+}
+.about_video a {
+    color: #fff;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 67px;
+}

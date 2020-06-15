@@ -1,0 +1,84 @@
+<div class="header">
+    <div class="header-top">
+        <div class="container-main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="heder_top_info">
+                            <ul class="align-items-center d-flex list-inline p-0 m-0">
+                                <li>+8801974532</li>
+                                <li class="ml-3">example@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="heder_top_social text-right">
+                            <ul class="align-items-center d-flex justify-content-end list-inline p-0 m-0">
+                                <li class="mr-3">
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="mr-3">
+                                    <a href="">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu fix-menu" data-offset-top="10">
+        <div class="container-main">
+            <div class="container-fluid">
+                <nav class=" navbar navbar-expand-lg navbar-light w-100 p-0 d-lg-flex d-md-flex align-items-center">
+                    <button class="navbar-toggler m-1 border border-white" style="border-color: #333333!important;"
+                        type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="color: #36EA7F"></i>
+                        
+                    </button>
+                    <div class="logo">
+                        <a class="navbar-brand" [routerLink]=" '/'"><span>H</span>hunter</a>
+                    </div>
+                    <div class="collapse navbar-collapse scroll-blog" id="navbarNavDropdown">
+                        <ul class="justify-content-end navbar-nav w-100 text-center"
+                            [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0">
+                            <ng-template #recursiveMenu let-menu>
+                                <li class="nav-item" *ngFor="let item of menu"
+                                    [attr.data-toggle]="(width < 989) ? 'collapse' :''"
+                                    [attr.data-target]="(width < 989) ? '#navbarNavDropdown' :''">
+                                    <a class="nav-link pl-0 pr-0 text-white" [routerLink]=" '/'+item.link"
+                                        [ngClass]="item.parent_id == 0?'parent-menu':''">
+                                        {{item.name}}
+                                    </a>
+                                    <ul class="dropdown-menu  rounded-0 border-0"
+                                        *ngIf="item.data && item.data.length > 0">
+                                        <ng-container
+                                            *ngTemplateOutlet="recursiveMenu; context:{ $implicit: item.data }">
+                                        </ng-container>
+                                    </ul>
+                                </li>
+                            </ng-template>
+                            <ng-container *ngTemplateOutlet="recursiveMenu; context:{ $implicit: menu }">
+                            </ng-container>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

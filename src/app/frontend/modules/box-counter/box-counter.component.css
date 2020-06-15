@@ -1,0 +1,45 @@
+.app-counter{
+    padding: 50px 0px 55px;
+    background: url(../../../../assets/img/counter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.app-counter::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(../../../../assets/img/pattarn.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.app-counter::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.count_item h1 {
+    font-family: 'Merriweather', serif;
+    color: #36EA7F;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.count_item p {
+    margin: 0px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
