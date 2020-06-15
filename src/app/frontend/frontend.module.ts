@@ -14,6 +14,7 @@ import { BoxTeammemberComponent } from './modules/box-teammember/box-teammember.
 import { BoxCounterComponent } from './modules/box-counter/box-counter.component';
 import { BoxWorkComponent } from './modules/box-work/box-work.component';
 import { BoxWorkwithComponent } from './modules/box-workwith/box-workwith.component';
+import { BoxTestmonialComponent } from './modules/box-testmonial/box-testmonial.component';
 
 
 const appRoutes: Routes = [
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
   }
 ]
 @NgModule({
-  declarations: [FrontendComponent, HomeComponent,HeaderComponent,FooterComponent, BannerComponent, BoxAboutComponent, BoxServicesComponent, BoxProjectComponent, BoxTeammemberComponent, BoxCounterComponent, BoxWorkComponent, BoxWorkwithComponent],
+  declarations: [FrontendComponent, HomeComponent,HeaderComponent,FooterComponent, BannerComponent, BoxAboutComponent, BoxServicesComponent, BoxProjectComponent, BoxTeammemberComponent, BoxCounterComponent, BoxWorkComponent, BoxWorkwithComponent, BoxTestmonialComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(appRoutes),
