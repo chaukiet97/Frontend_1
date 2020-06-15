@@ -1,0 +1,47 @@
+.app-video{
+    min-height: 350px;
+    padding: 100px 0px;
+    background: url(../../../../assets/img/video.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.app-video::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(../../../../assets/img/pattarn.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.app-video::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.video_content .fa {
+    font-size: 66px;
+    color: #ddd;
+    position: relative;
+    top: 58px;
+    transition: all 0.3s linear;
+}
+.video_content h3 {
+    text-transform: uppercase;
+    color: #ddd;
+    margin: 0px;
+}
+.video_content h3 span {
+    color: #36EA7F;
+}

@@ -56,12 +56,12 @@
                     </div>
                     <div class="collapse navbar-collapse scroll-blog" id="navbarNavDropdown">
                         <ul class="justify-content-end navbar-nav w-100 text-center"
-                            [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0">
+                            [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0" id="scroll_spy_nav">
                             <ng-template #recursiveMenu let-menu>
                                 <li class="nav-item" *ngFor="let item of menu"
                                     [attr.data-toggle]="(width < 989) ? 'collapse' :''"
                                     [attr.data-target]="(width < 989) ? '#navbarNavDropdown' :''">
-                                    <a class="nav-link pl-0 pr-0 text-white" [routerLink]=" '/'+item.link"
+                                    <a class="nav-link pl-0 pr-0 text-white" [routerLink]="'/'+item.link"
                                         [ngClass]="item.parent_id == 0?'parent-menu':''">
                                         {{item.name}}
                                     </a>

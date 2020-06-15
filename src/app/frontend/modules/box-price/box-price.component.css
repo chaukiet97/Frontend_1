@@ -1,0 +1,68 @@
+.section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.price_item {
+    background: #333;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.price_item:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+}
+.packeg_name h3 {
+    margin: 0px;
+    color: #36EA7F;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 20px 0px;
+}
+.packeg_amout {
+    background: #36EA7F;
+    padding: 10px 0px;
+}
+.packeg_amout h5 span {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+.packeg_feater {
+    padding: 30px 24px;
+    text-align: left;
+}
+.packeg_feater ul li {
+    padding-bottom: 11px;
+    border-bottom: 1px dotted #36EA7F;
+    margin-bottom: 6px;
+}
+.packeg_btn {
+    padding-bottom: 25px;
+}
+.packeg_btn button {
+    border: 1px solid #333;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+    background: #333;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+}
+.packeg_btn button:hover {
+    background: #36EA7F;
+    color: #fff;
+    border-color: #36EA7F;
+}
+li {
+    list-style: none;
+}

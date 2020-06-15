@@ -1,0 +1,53 @@
+.app-newslater{
+    padding: 50px 0px;
+    background: url(../../../../assets/img/newslatter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.app-newslater::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: url(../../../../assets/img/pattarn.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.app-newslater::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.news_item h3 {
+    margin: 0px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+    top: 11px;
+}
+.news_item button {
+    border: 1px solid #36EA7F;
+    color: #36EA7F;
+    padding: 10px 20px;
+    background: transparent;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.news_item button:hover {
+    background: #36EA7F;
+    color: #fff;
+}

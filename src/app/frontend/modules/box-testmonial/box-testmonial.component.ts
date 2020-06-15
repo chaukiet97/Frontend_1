@@ -19,11 +19,12 @@ export class BoxTestmonialComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      if (window['slides']) {
 
-    if (window['slidesproducts']) {
-
-      window['slidesproducts']();
-  }
+          window['slides']();
+      }
+  }, 1000);
   }
 
 }

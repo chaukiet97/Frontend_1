@@ -333,11 +333,11 @@ button.toast-close-button {
 }
 
 //slides
-.owl-carousel-products .owl-dot.active {
+.owl-carousel-testmonial .owl-dot.active {
     background: #36EA7F;
     border-color: #36EA7F;
 }
-.owl-carousel-products .owl-dot {
+.owl-carousel-testmonial .owl-dot {
     height: 20px;
     width: 20px;
     border: 1px solid #e5e5e5;
@@ -346,9 +346,36 @@ button.toast-close-button {
     border-radius: 50%;
     transition: all 0.3s linear;
 }
-// .app-testmonial .owl-item {
-//     width: auto!important;
-// }
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: none;
+}
+owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: none;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: none;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-carousel button.owl-dot {
+    background:#e5e5e5;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}
 //end siles
 /* ========= small device ============*/
 @media (max-width:767px) {

@@ -1,0 +1,113 @@
+.section_title h3 {
+    margin: 0px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.section_title p {
+    margin: 0px;
+    color: #444;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.name {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e5e5e5;
+}
+.email {
+    width: 100%;
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e5e5e5;
+}
+.phone {
+    width: 100%;
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e5e5e5;
+}
+.subject {
+    width: 100%;
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e5e5e5;
+}
+.message {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 1px solid #e5e5e5;
+}
+.contact_form form button {
+    background: #36EA7F;
+    border: 1px solid #36EA7F;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: table;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+.contact_form form button:hover {
+    background: transparent;
+    color: #36EA7F;
+    border-color: #36EA7F;
+}
+.contcat_info > ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 6px;
+    color: #444;
+}
+.contcat_info > ul li .fa {
+    color: #36EA7F;
+    font-size: 17px;
+    padding-right: 10px;
+    position: relative;
+    top: 4px;
+}
+li {
+    list-style: none;
+}
+.fllow_info h3 {
+    text-transform: uppercase;
+    color: #222;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+.fllow_info ul li {
+    display: inline-block;
+}
+.fllow_info ul li:first-child .fa {
+    margin-left: 0px;
+}
+.fllow_info ul li .fab {
+    height: 34px;
+    width: 33px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 34px;
+    color: #444;
+    margin: 0px 2px;
+    transition: all 0.3s linear;
+}
+.fllow_info ul li .fab:hover {
+    background: #36EA7F;
+    border-color: #36EA7F;
+    color: #fff;
+}

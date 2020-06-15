@@ -1,20 +1,6 @@
 /* JS SLIDER */
 function slides() {
-    $('.owl-carousel-slides').owlCarousel({
-        loop: true,
-        animateOut: 'fadeOut',
-        items: 1,
-        margin: 0,
-        autoplay: true,
-        // autoWidth:true,
-        autoHeight: true,
-        autoplayTimeout: 5000,
-        nav: false,
-        dots: false
-    })
-}
-function slidesproducts() {
-    $('.owl-carousel-products').owlCarousel({
+    $('.owl-carousel-testmonial').owlCarousel({
         loop:true,
         margin:20,
         nav:false,
@@ -33,18 +19,23 @@ function slidesproducts() {
         }
     })
 }
-
-
-function slidespages() {
-    $('.owl-carousel-slidespages').owlCarousel({
-        loop: false,
-        margin: 10,
-        autoplay: true,
-        nav: false,
-        dots: false,
-        navigation: false,
-        autoplayTimeout: 5000,
-        items: 3
+function brand() {
+    $('.owl-carousel-brand').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        autoplay:true,
+        mouseDrag:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:6
+            }
+        }
     })
 }
-
