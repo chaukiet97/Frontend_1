@@ -8,7 +8,10 @@
     margin-left:20px ;
     margin-right: 13px;
 }
-
+.usser :hover.dropdown-item{
+    background: #1E2127;
+    color: #fff;
+}
 .menu {
     background-color: #fff;
     border-bottom: 3px solid #f8c20d;
@@ -28,6 +31,7 @@
     color: #ddd !important;
     padding: 0px 8px;
 }
+
 .affix.menu {
     box-shadow: 0px -3px 13px rgba(0,0,0,0.6);
     position: fixed;
@@ -108,7 +112,7 @@
         transition: all 0.3s linear;
     }
     .menu .navbar-nav > li > a:hover:after,  .menu .navbar-nav > .active > a:after{
-        width: 60%;
+        width: 100%;
     }
     
     li a {

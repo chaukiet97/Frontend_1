@@ -565,5 +565,6 @@ button:focus{
     display: block;
     width: 100%;
 }
-
-
+.dropdown-menu{
+    border-radius: 0 !important;
+}

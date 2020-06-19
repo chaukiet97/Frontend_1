@@ -35,12 +35,28 @@
                                     </a>
                                 </li>
                                 <div class="profile_icon">
-                                    <div class="d-flex pt-1 justify-content-center"
-                                        *ngIf="ws.USERS.check(true) == true">
-                                        <div (click)='logout()'>
-                                           <img [src]="ws.USERS.get(true).photoUrl" alt="" srcset="">
-                                            <span class="text-white">{{ ws.USERS.get(true).name }}</span>
+                                    <div class="btn float-right d-down-none" *ngIf="ws.USERS.check(true) == true">
+                                        <div class="dropdown">
+                                            <a class="nav-link  p-0 text-dark" href="#" role="button"
+                                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"
+                                                style="width: 100%;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">
+                                                <img [src]="ws.USERS.get(true).photoUrl" alt="" srcset="">
+                                                <span class="text-white">{{ ws.USERS.get(true).name }}</span>
+                                            </a>
+                                            <div class="dropdown-menu usser" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" [routerLink]="['/profile']">
+                                                   Thông Tin Tài Khoản</a>
+                               
+                                                <a class="dropdown-item" (click)='logout()'>
+                                                    <span>Đăng Xuất</span></a>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="ml-3" *ngIf="ws.USERS.check(true) == false">
+                                        <a class=" nav-link p-0 text-white" [routerLink]="'/login'">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </ul>
@@ -68,8 +84,8 @@
                             [ngClass]="width > 1024 ? 'align-items-center':''" *ngIf="menu && menu.length > 0"
                             id="scroll_spy_nav">
                             <ng-template #recursiveMenu let-menu>
-                                <li class="nav-item" *ngFor="let item of menu"
-                                    [attr.data-toggle]="(width < 989) ? 'collapse' :''"
+                                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item"
+                                    *ngFor="let item of menu" [attr.data-toggle]="(width < 989) ? 'collapse' :''"
                                     [attr.data-target]="(width < 989) ? '#navbarNavDropdown' :''">
                                     <a class="nav-link pl-0 pr-0 text-white" [routerLink]="'/'+item.link"
                                         [ngClass]="item.parent_id == 0?'parent-menu':''">

@@ -21,20 +21,60 @@ import { BoxPriceComponent } from './modules/box-price/box-price.component';
 import { BoxBrandComponent } from './modules/box-brand/box-brand.component';
 import { BoxNewslaterComponent } from './modules/box-newslater/box-newslater.component';
 import { BoxContactComponent } from './modules/box-contact/box-contact.component';
+import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
+import { TeamComponent } from './team/team.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
   {
-      path: '', component: FrontendComponent,
-      children: [
-          { path: '', redirectTo: 'trang-chu',pathMatch:"full" },
-          { path: 'trang-chu', component: HomeComponent},
-
-      ]
+    path: '', component: FrontendComponent,
+    children: [
+      { path: '', redirectTo: 'trang-chu', pathMatch: "full" },
+      { path: 'trang-chu', component: HomeComponent },
+      { path: 'about-us', component: AboutComponent },
+      { path: 'sevices', component: ServiceComponent },
+      { path: 'our-team', component: TeamComponent },
+      { path: 'testimonial', component: TestimonialComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'profile', component: ProfileComponent },
+    ]
   }
 ]
 @NgModule({
-  declarations: [FrontendComponent, HomeComponent,HeaderComponent,FooterComponent, BannerComponent, BoxAboutComponent, BoxServicesComponent, BoxProjectComponent, BoxTeammemberComponent, BoxCounterComponent, BoxWorkComponent, BoxWorkwithComponent, BoxTestmonialComponent, BoxVideoComponent, BoxBlogComponent, BoxPriceComponent, BoxBrandComponent, BoxNewslaterComponent, BoxContactComponent],
+  declarations: [
+    FrontendComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    BannerComponent,
+    BoxAboutComponent,
+    BoxServicesComponent,
+    BoxProjectComponent,
+    BoxTeammemberComponent,
+    BoxCounterComponent,
+    BoxWorkComponent,
+    BoxWorkwithComponent,
+    BoxTestmonialComponent,
+    BoxVideoComponent,
+    BoxBlogComponent,
+    BoxPriceComponent,
+    BoxBrandComponent,
+    BoxNewslaterComponent,
+    BoxContactComponent,
+    AboutComponent,
+    ServiceComponent,
+    TeamComponent,
+    BlogComponent,
+    ContactComponent,
+    TestimonialComponent,
+    ProfileComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(appRoutes),

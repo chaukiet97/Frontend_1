@@ -1,0 +1,37 @@
+<div class="pt-5 pb-5 bg-white">
+    <div class="container-main">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 p-0">
+                    <fieldset class="tag-fieldset profile p-2 border-0">
+                        <div class="card border-0 text-center">
+                            <div>
+                                <img [src]="ws.USERS.get(true).photoUrl" class="img-fluid rounded-circle" alt=""
+                                    srcset="">
+                            </div>
+                            <h1>{{ ws.USERS.get(true).name }}</h1>
+                            <ul class="list-group list-group-flush">
+                                <li class="align-items-center d-flex justify-content-around list-group-item">
+                                    <div>Họ và tên lót : </div>
+                                    <div>{{ ws.USERS.get(true).firstName }}</div>
+                                </li>
+                                <li class="align-items-center d-flex justify-content-around list-group-item">
+                                    <div>Tên : </div>
+                                    <div>{{ ws.USERS.get(true).lastName }}</div>
+                                </li>
+                                <li class="align-items-center d-flex justify-content-around list-group-item">
+                                    <div>Email : </div>
+                                    <div>{{ ws.USERS.get(true).email }}</div>
+                                </li>
+                                <li class="align-items-center d-flex justify-content-around list-group-item">
+                                    <div>Đăng nhập bằng : </div>
+                                    <div>{{ ws.USERS.get(true).provider }}</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

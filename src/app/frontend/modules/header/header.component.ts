@@ -16,13 +16,13 @@ export class HeaderComponent implements OnInit {
     public router: Router,
   ) {
     this.menu = [
-      { id: 1, name: "HOME", link: "#banner", description: "", detail: "", },
-      { id: 2, name: "ABOUT", link: "#about-us", description: "", detail: "", },
-      { id: 3, name: "SERVICES", link: "#sevice", description: "", detail: "", },
-      { id: 4, name: "TEAM", link: "#our-team", description: "", detail: "", },
-      { id: 5, name: "TESTMONIAL", link: "#testimonial", description: "", detail: "", },
-      { id: 6, name: "BLOG", link: "#blog", description: "", detail: "", },
-      { id: 7, name: "CONTACT", link: "#contact", description: "", detail: "", },
+      { id: 1, name: "HOME", link: "trang-chu", description: "", detail: "", },
+      { id: 2, name: "ABOUT", link: "about-us", description: "", detail: "", },
+      { id: 3, name: "SERVICES", link: "sevices", description: "", detail: "", },
+      { id: 4, name: "TEAM", link: "our-team", description: "", detail: "", },
+      { id: 5, name: "TESTMONIAL", link: "testimonial", description: "", detail: "", },
+      { id: 6, name: "BLOG", link: "blog", description: "", detail: "", },
+      { id: 7, name: "CONTACT", link: "contact", description: "", detail: "", },
     ];
     this.width = document.body.getBoundingClientRect().width;
 
@@ -41,7 +41,9 @@ export class HeaderComponent implements OnInit {
   logout() {
 
     this.ws.USERS.remove();
-    this.ws.USERS.navigate(); 
+    setTimeout(() => {
+      this.ws.USERS.navigate(); 
+    }, 1000);
   }
 
 }
