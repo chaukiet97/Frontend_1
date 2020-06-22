@@ -8,7 +8,7 @@ import { GlobalsService } from 'src/app/globals';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(private ws:GlobalsService) { }
+  constructor(public ws:GlobalsService) { }
 
   ngOnInit(): void {
   }
